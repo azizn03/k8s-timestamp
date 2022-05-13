@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: timestamp-deployment
+  labels:
+    app: timestamp-nodejsapp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: timestamp-nodejsapp
+  template:
+    metadata:
+      labels:
+        app: timestamp-nodejsapp
+    spec:
+      containers:
+      - name: timestamp-nodejsapp
+        image: azizn03/timestamp
+        ports:
+        - containerPort: 8080
