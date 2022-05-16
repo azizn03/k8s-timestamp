@@ -3,10 +3,6 @@ output "cluster_endpoint" {
     value = module.eks.cluster_endpoint
 }
 
-/* output "cluster_security_group_id" {
-    description = "Security group ids attached to the cluster"
-    value = module.eks.cluster_security_group_id
-} */
 
 output "eks_status" {
     description = "Outputs the status of the eks cluster"
@@ -15,7 +11,10 @@ output "eks_status" {
 
 
 output "timestamp_loadbalancer" {
-    description = "Security group ids attached to the cluster"
+    description = "Output the hostname of the loadbalancer"
     value = kubernetes_service.timestamp_loadbalancer.status.0.load_balancer.0.ingress.0.hostname
+
+
+
 }
 

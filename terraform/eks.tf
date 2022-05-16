@@ -21,7 +21,7 @@ module "eks" {
       desired_size = 1
 
       instance_types = ["t2.small"]
-      capacity_type  = "SPOT"
+      capacity_type  = "ON_DEMAND"
     }}
 
   }
@@ -61,6 +61,11 @@ module "eks" {
       }
     }
   }
+
+   depends_on = [
+    module.eks.eks_managed_node_groups,
+  ]
+
 }
 
 resource "kubernetes_service" "timestamp_loadbalancer" {
@@ -79,4 +84,9 @@ resource "kubernetes_service" "timestamp_loadbalancer" {
 
     type = "LoadBalancer"
   }
+
+  depends_on = [
+    module.eks.eks_managed_node_groups,
+  ]
+
 }
