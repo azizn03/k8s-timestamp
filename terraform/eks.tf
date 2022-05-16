@@ -15,7 +15,7 @@ module "eks" {
   }
 
   eks_managed_node_groups = {
-      time = {
+      ec2_timestamp = {
       min_size     = 1
       max_size     = 5
       desired_size = 1
@@ -23,8 +23,6 @@ module "eks" {
       instance_types = ["t2.small"]
       capacity_type  = "SPOT"
     }}
-
-  node_security_group_id = aws_security_group.all_worker_mgmt.id
 
   }
 

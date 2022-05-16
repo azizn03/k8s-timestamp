@@ -12,17 +12,4 @@ module "vpc" {
 
 }
 
-resource "aws_security_group" "all_worker_mgmt" {
-  name_prefix = "all_Worker_management"
-  vpc_id = module.vpc.vpc_id
-
-  ingress {
-    description = "TLS from VPC"
-    from_port = 22
-    to_port   = 22
-    protocol  = "tcp"
-    cidr_blocks = ["10.0.1.0/24", "10.0.2.0/24"]
-  }
-
-}
 

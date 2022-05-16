@@ -3,10 +3,16 @@ output "cluster_endpoint" {
     value = module.eks.cluster_endpoint
 }
 
-output "cluster_security_group_id" {
+/* output "cluster_security_group_id" {
     description = "Security group ids attached to the cluster"
     value = module.eks.cluster_security_group_id
+} */
+
+output "eks_status" {
+    description = "Outputs the status of the eks cluster"
+    value = module.eks.cluster_status
 }
+
 
 output "timestamp_loadbalancer" {
     description = "Security group ids attached to the cluster"
