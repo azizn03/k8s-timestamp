@@ -1,6 +1,6 @@
 ### K8s timestamp 
 
-This terraform code is intended to bring up and test a restAPI application which is hosted on EKS via a managed node. 
+This terraform code is intended to bring up and test a restAPI endpoint which will return a json message on port 8080 from the /timestamp url which is hosted on EKS via a managed node. 
 
 #### Prerequisites
 
