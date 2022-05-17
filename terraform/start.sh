@@ -1,4 +1,4 @@
-#!/bin/bash
+q#!/bin/bash
 
 terraform init -input=false
 

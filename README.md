@@ -4,7 +4,7 @@ This terraform code is intended to bring up and test a restAPI endpoint which wi
 
 #### Prerequisites
 
-Ensure this is ran in a unix based terminal with access to the following packages.
+Ensure this is ran on a unix based terminal with access to the following packages.
 
 
  - Terraform => 1.1.0
