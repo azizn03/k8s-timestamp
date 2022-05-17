@@ -35,7 +35,7 @@ Now export AWS ACCESS and SECRET keys within the terminal
 
 Navigate into the  `terraform` folder and run the `start.sh` script.
 
-This will bring up the infrastructure which consits of a single ondemand EKS managed node running a deployment hosting the `azizn03/timestamp` app. It will also bringup a AWS native load balancer service. 
+This will bring up the infrastructure which consits of a single ondemand EKS managed node running a deployment hosting the `azizn03/timestamp`app which is deployed within my own dockerhub repo. It will also bringup a AWS native load balancer service. 
 
 Once the terraform script has been completed it will output the following:
 
