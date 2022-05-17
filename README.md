@@ -30,6 +30,7 @@ Ensure your AWS account has the correction permissions to manage a EKS cluster. 
 Now export AWS ACCESS and SECRET keys within the terminal
 
 `$ export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE`
+
 `$ export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfKEY`
 
 Navigate into the  `terraform` folder and run the `start.sh` script.
@@ -38,9 +39,9 @@ This will bring up the infrastructure which consits of a single ondemand EKS man
 
 Once the terraform script has been completed it will output the following:
 
-`Cluster endpoint`
-`EKS status`
-`Load Balancer endpoint`
+- `Cluster endpoint`
+- `EKS status`
+- `Load Balancer endpoint`
 
 The first section of the test has been completed showing the EKS cluster if it has ran correctly it will show as active. The next section of the script goes  through the following loop 
 
