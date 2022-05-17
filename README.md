@@ -6,8 +6,9 @@ This terraform code is intended to bring up and test a restAPI application which
 
 Ensure this is ran in a unix based terminal with access to the following packages.
 
- + Terraform
- + Curl
+
+ - Terraform => 1.1.0
+ - Curl
 
 #### Instructions 
 
