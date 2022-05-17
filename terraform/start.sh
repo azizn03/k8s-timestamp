@@ -14,3 +14,4 @@ done
 echo
 curl $url:8080/timestamp
 echo
+echo "URL: $url:8080/timestamp"
