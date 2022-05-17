@@ -1,15 +1,15 @@
-###K8s timestamp 
+### K8s timestamp 
 
 This terraform code is intended to bring up and test a restAPI application which is hosted on EKS via a managed node. 
 
-####Prerequisites
+#### Prerequisites
 
 Ensure this is ran in a unix based terminal with access to the following packages.
 
  + Terraform
  + Curl
 
-####Instructions 
+#### Instructions 
 
 Ensure your AWS account has the correction permissions to manage a EKS cluster. We can attach the following policy to assume the EKS role.
 
