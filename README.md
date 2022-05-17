@@ -54,5 +54,9 @@ The first section of the test has been completed showing the EKS cluster if it h
 
 This is the next and final stage of the testing phase which ill go through a loop and curl the endpoint until it retuns a response. Then the following section of the script is outputted showing the json message. It will also paste the URL which you can paste in the browser and test for yourself.
 
-
+    echo
+    curl $url:8080/timestamp
+    echo
+    echo "$url:8080/timestamp"
+    echo
 
