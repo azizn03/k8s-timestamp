@@ -60,3 +60,6 @@ This is the next and final stage of the testing phase which involves going throu
     echo "$url:8080/timestamp"
     echo
 
+#### MISC
+
+The App folder is there for anyone to look at the JS code to see how the RestAPI endpoint functions. The folder is not included in the terraform or bash script.
