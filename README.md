@@ -43,7 +43,7 @@ Once the terraform script has been completed it will output the following:
 - `EKS status`
 - `Load Balancer endpoint`
 
-The first section of the test has been completed showing the EKS cluster if it has ran correctly it will show as active. The next section of the script goes  through the following loop 
+The first section of the test has been completed showing the EKS cluster status and if it has ran correctly it will show as active. The next section of the script goes  through the following loop: 
 
     url=$(terraform output -raw timestamp_loadbalancer)
     
@@ -52,7 +52,7 @@ The first section of the test has been completed showing the EKS cluster if it h
         sleep 5
     done
 
-This is the next and final stage of the testing phase which ill go through a loop and curl the endpoint until it retuns a response. Then the following section of the script is outputted showing the json message. It will also paste the URL which you can paste in the browser and test for yourself.
+This is the next and final stage of the testing phase which involves going through a loop and curl the endpoint until it returns a response. Then the following section of the script is outputted showing the json message. It will also paste the URL which you can paste in the browser and test for yourself.
 
     echo
     curl $url:8080/timestamp
