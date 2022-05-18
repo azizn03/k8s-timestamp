@@ -1,9 +1,9 @@
 const app = require('express')();
-const PORT = 80;
+const PORT = 8080;
 
 app.listen(
     PORT, () => {
-        console.log('Its alive on http://localhost:80')
+        console.log('Its alive on http://localhost:$PORT')
 })
 
 app.get('/timestamp', (req, res) => {
